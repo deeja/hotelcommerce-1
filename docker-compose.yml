@@ -1,7 +1,9 @@
+
 version: '3.3'
 services:
    web:
-     build: .
+     image: prestashop/base:7.0-apache
+     # https://github.com/PrestaShop/docker/blob/master/base/Dockerfile.model     
      volumes:
        - ./src/:/var/www/html/
      ports: 
