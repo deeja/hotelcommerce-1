@@ -9,12 +9,10 @@ services:
    db:
      image: mysql:5.7
      volumes:
-       - ./data/mysql:/var/lib/mysql       
+       - ./data:/var/lib/mysql       
      restart: always
      environment:
-       MYSQL_ROOT_PASSWORD: somewordpress
-       MYSQL_DATABASE: wordpress
-       MYSQL_USER: wordpress
-       MYSQL_PASSWORD: wordpress
-
-        cp * /var/www/html/confstuff
+       MYSQL_ROOT_PASSWORD: qloapp
+       MYSQL_DATABASE: qloapp
+       MYSQL_USER: qloapp
+       MYSQL_PASSWORD: qloapp        
